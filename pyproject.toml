@@ -1,0 +1,13 @@
+[project]
+name = "pytorch-fundamentals-mnist"
+version = "0.1.0"
+description = "A clean, reproducible PyTorch baseline (MNIST) with proper experiment structure."
+requires-python = ">=3.10"
+authors = [{name="Ragouguelaba Agoda Koussema"}]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

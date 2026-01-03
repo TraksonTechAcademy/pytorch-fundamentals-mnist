@@ -1,0 +1,28 @@
+seed: 42
+
+data:
+  dataset: "MNIST"
+  data_dir: "./artifacts/data"
+  batch_size: 128
+  num_workers: 2
+
+model:
+  name: "mlp"
+  input_dim: 784
+  hidden_dims: [256, 128]
+  dropout: 0.2
+  num_classes: 10
+
+train:
+  epochs: 5
+  lr: 0.001
+  weight_decay: 0.0001
+  grad_clip_norm: 1.0
+  device: "auto"         # "auto" | "cpu" | "cuda"
+  amp: true              # mixed precision if CUDA available
+  log_every: 100
+  save_every_epoch: true
+
+output:
+  run_dir: "./runs"
+  checkpoints_dir: "./checkpoints"
