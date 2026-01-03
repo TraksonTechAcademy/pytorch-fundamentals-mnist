@@ -93,7 +93,7 @@ This repo is designed to be extended into **agentic decision systems**:
 
 ---
 
-## Notes for reviewers (Prof. Kim-style)
+## Notes for reviewers
 If you skim only three things:
 1. `configs/default.yaml` (controls experiments)
 2. `train.py` (clean training loop with AMP/clip/logging)
